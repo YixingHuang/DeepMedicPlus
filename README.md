@@ -66,4 +66,4 @@ For Windows users, you can also use [runCMDs.py](./DeepMedicPlus/runCMDs.py) to 
 
 ### Training new models for your own data
 1. Preprocess the data with either your own preprocessing pipeline or [ours](./Brain_MRI_Preprocessing_pipeline/).
-2. Put your training data paths in the config files of [.\examples\configFiles\deepMedicPlus\train](./DeepMedicPlus/examples/configFiles/deepMedicPlus/train/)
+2. Put your training data paths in the config files of [.\examples\configFiles\deepMedicPlus\train](./DeepMedicPlus/examples/configFiles/deepMedicPlus/train/). Put the volumes, labels, brain masks, and prior volumes into trainChannels_t1c.cfg  trainGtLabels.cfg  trainRoiMasks.cfg and trainPriorChannels_t1c.cfg respectively.
