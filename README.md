@@ -2,6 +2,8 @@
 ## Deep learning for brain metastasis detection and segmentation in longitudinal MRI data
 This is the official code repository for our Medical Physics paper "Deep learning for brain metastasis detection and segmentation in longitudinal MRI data": https://doi.org/10.1002/mp.15863
  
+ The backbone of our implementation is from the [original DeepMedic repository](https://github.com/deepmedic/deepmedic). Therefore, almost all the instructions from the original DeepMedic repository still apply to our implementation.
+ 
  To use these codes, please cite our paper:
  
  @article{huang2022deep,  
