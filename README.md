@@ -63,3 +63,7 @@ python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfi
 ```
 
 For Windows users, you can also use [runCMDs.py](./DeepMedicPlus/runCMDs.py) to run multiple commands.
+
+### Training new models for your own data
+1. Preprocess the data with either your own preprocessing pipeline or [ours](./Brain_MRI_Preprocessing_pipeline/).
+2. Put your training data paths in the config files of [.\examples\configFiles\deepMedicPlus\train](./DeepMedicPlus/examples/configFiles/deepMedicPlus/train/)
