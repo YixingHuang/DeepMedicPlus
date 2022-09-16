@@ -82,3 +82,8 @@ python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfi
 python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -train ./examples/configFiles/deepMedicPlus/train/trainConfigwide.cfg  -load ./examples/output/saved_models/deepMedicWide1.high_precision.model.ckpt -dev cuda0
 ```
    In [trainConfigwide.cfg](./DeepMedicPlus/examples/configFiles/DeepMedicPlus/train/trainConfigwide.cfg), Line 62: please add a new numberOfEpochs value,  for example, 80, then additional 30 epochs will be trained.
+   
+## Our System Environment
+numpy version:1.19.5    it seems that there is compatibility problems with the latest numpy versions.
+
+We run our codes in a Windows system with Python 3.7, CUDA 11.0; Higher versions should be okay.
