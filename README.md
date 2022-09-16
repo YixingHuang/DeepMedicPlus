@@ -1,5 +1,5 @@
 # DeepMedicPlus
-Deep learning for brain metastasis detection and segmentation in longitudinal MRI data
+## Deep learning for brain metastasis detection and segmentation in longitudinal MRI data
 This is the official code repository for our Medical Physics paper "Deep learning for brain metastasis detection and segmentation in longitudinal MRI data"
  https://doi.org/10.1002/mp.15863
  
@@ -18,4 +18,8 @@ url = {https://aapm.onlinelibrary.wiley.com/doi/abs/10.1002/mp.15863},
 eprint = {https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1002/mp.15863},  
 year = {2022}  
 }  
+
+## Contents
+This repository contains our DeepMedic+ implementation with prior volumes and proposed volume-level sensitivity-specificity (VSS) loss, as well as the pretrained high-sensitivity and high-precision model weights.
+For retraining on your own datasets, our preprocessing pipeline is also shared.
 
