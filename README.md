@@ -67,4 +67,17 @@ For Windows users, you can also use [runCMDs.py](./DeepMedicPlus/runCMDs.py) to 
 ### Training new models for your own data
 1. Preprocess the data with either your own preprocessing pipeline or [ours](./Brain_MRI_Preprocessing_pipeline/).
 2. Put your training data paths in the config files of [.\examples\configFiles\deepMedicPlus\train](./DeepMedicPlus/examples/configFiles/deepMedicPlus/train/). Put the volumes, labels, brain masks, and prior volumes into trainChannels_t1c.cfg,  trainGtLabels.cfg,  trainRoiMasks.cfg, and trainPriorChannels_t1c.cfg, respectively.
-3. In [trainConfigwide.cfg](./DeepMedicPlus/examples/configFiles/trainConfigwide.cfg)  Line 62: please add a new numberOfEpochs value, for example, 80, then additional 30 epochs will be trained.
+3. In [trainConfigwide.cfg](./DeepMedicPlus/examples/configFiles/DeepMedicPlus/train/trainConfigwide.cfg), Line 62: please add a new numberOfEpochs value.
+5. Change the $\alpha A$ parameter mannualy in [cost_functions.py](./DeepMedicPlus/deepmedic/neuralnet/cost_functions.py), for example, 0.995 for high sensitivity and 0.5 for high precision. (Sorry that haven't made it available in the args input yet). 
+7. Run the command for training
+```python
+python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -train ./examples/configFiles/deepMedicPlus/train/trainConfigwide.cfg  -dev cuda0
+```
+8. For fast training, you can fine tune our pretrained model with your own training data with the following command:
+```python
+python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -train ./examples/configFiles/deepMedicPlus/train/trainConfigwide.cfg  -load ./examples/output/saved_models/deepMedicWide1.high_sensitivity.model.ckpt -dev cuda0
+```
+```python
+python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -train ./examples/configFiles/deepMedicPlus/train/trainConfigwide.cfg  -load ./examples/output/saved_models/deepMedicWide1.high_precision.model.ckpt -dev cuda0
+```
+In [trainConfigwide.cfg](./DeepMedicPlus/examples/configFiles/DeepMedicPlus/train/trainConfigwide.cfg), Line 62: please add a new numberOfEpochs value, for example, 80, then additional 30 epochs will be trained.
