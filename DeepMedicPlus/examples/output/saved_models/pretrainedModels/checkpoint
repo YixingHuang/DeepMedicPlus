@@ -1,0 +1,6 @@
+model_checkpoint_path: "C:\\MachineLearning\\deepmedicMy\\examples\\output/saved_models//pretrainedModels//deepMedicWide1.TPTNwMean0996_retest_bs10.final.2021-12-06.01.37.57.033802.model.ckpt"
+all_model_checkpoint_paths: "C:\\MachineLearning\\deepmedicMy\\examples\\output/saved_models//pretrainedModels//deepMedicWide1.TPTNwMean0996_retest_bs10.2021-12-06.00.02.00.098778.model.ckpt"
+all_model_checkpoint_paths: "C:\\MachineLearning\\deepmedicMy\\examples\\output/saved_models//pretrainedModels//deepMedicWide1.TPTNwMean0996_retest_bs10.2021-12-06.00.33.53.845439.model.ckpt"
+all_model_checkpoint_paths: "C:\\MachineLearning\\deepmedicMy\\examples\\output/saved_models//pretrainedModels//deepMedicWide1.TPTNwMean0996_retest_bs10.2021-12-06.01.05.54.569159.model.ckpt"
+all_model_checkpoint_paths: "C:\\MachineLearning\\deepmedicMy\\examples\\output/saved_models//pretrainedModels//deepMedicWide1.TPTNwMean0996_retest_bs10.2021-12-06.01.37.56.787099.model.ckpt"
+all_model_checkpoint_paths: "C:\\MachineLearning\\deepmedicMy\\examples\\output/saved_models//pretrainedModels//deepMedicWide1.TPTNwMean0996_retest_bs10.final.2021-12-06.01.37.57.033802.model.ckpt"
