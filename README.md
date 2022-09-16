@@ -42,6 +42,10 @@ Pretrained models are located at
 The high sensitivity model is: deepMedicWide1.high_sensitivity.model.ckpt  
 The high precision model is: deepMedicWide1.high_precision.model.ckpt
 
+#### Data structure for test
+Put the main test volume paths in [.\examples\configFiles\deepMedicPlus\test\testChannels_t1c.cfg](./DeepMedicPlus/examples/configFiles/deepMedicPlus/test/testChannels_t1c.cfg)
+put the corresponding prior volume paths in [.\examples\configFiles\deepMedicPlus\test\testPriorChannels_t1c.cfg](./DeepMedicPlus/examples/configFiles/deepMedicPlus/test/testPriorChannels_t1c.cfg)
+
 #### Command line for inference/test with pretrained models
 ```python
 -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -test ./examples/configFiles/deepMedicPlus/test/testConfig.cfg -load ./examples/output/saved_models/deepMedicWide1.high_sensitivity.model.ckpt -dev cuda0
