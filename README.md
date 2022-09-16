@@ -18,6 +18,8 @@ eprint = {https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1002/mp.15863},
 year = {2022}  
 }  
 
+[logo]:GraphicalAbstract.png "Graphical abstract"
+
 ## Contents
 This repository contains our DeepMedic+ implementation with prior volumes and proposed volume-level sensitivity-specificity (VSS) loss, as well as the pretrained high-sensitivity and high-precision model weights.
 For retraining on your own datasets, our preprocessing pipeline is also shared.
