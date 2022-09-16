@@ -80,4 +80,4 @@ python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfi
 ```python
 python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -train ./examples/configFiles/deepMedicPlus/train/trainConfigwide.cfg  -load ./examples/output/saved_models/deepMedicWide1.high_precision.model.ckpt -dev cuda0
 ```
-..* In [trainConfigwide.cfg](./DeepMedicPlus/examples/configFiles/DeepMedicPlus/train/trainConfigwide.cfg), Line 62: please add a new numberOfEpochs value, for example, 80, then additional 30 epochs will be trained.
+..*In [trainConfigwide.cfg](./DeepMedicPlus/examples/configFiles/DeepMedicPlus/train/trainConfigwide.cfg), Line 62: please add a new numberOfEpochs value, for example, 80, then additional 30 epochs will be trained.
