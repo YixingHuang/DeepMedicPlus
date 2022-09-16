@@ -43,7 +43,8 @@ The high sensitivity model is: deepMedicWide1.high_sensitivity.model.ckpt
 The high precision model is: deepMedicWide1.high_precision.model.ckpt
 
 #### Data structure for test
-Put the main test volume paths in [.\examples\configFiles\deepMedicPlus\test\testChannels_t1c.cfg](./DeepMedicPlus/examples/configFiles/deepMedicPlus/test/testChannels_t1c.cfg)
+Put the main test volume paths in [.\examples\configFiles\deepMedicPlus\test\testChannels_t1c.cfg](./DeepMedicPlus/examples/configFiles/deepMedicPlus/test/testChannels_t1c.cfg)  
+
 put the corresponding prior volume paths in [.\examples\configFiles\deepMedicPlus\test\testPriorChannels_t1c.cfg](./DeepMedicPlus/examples/configFiles/deepMedicPlus/test/testPriorChannels_t1c.cfg)
 
 #### Command line for inference/test with pretrained models
