@@ -61,8 +61,9 @@ def vss(p_y_given_x_train, y_gt, eps=1e-5):
     PatchesNegOneHot = tf.math.reduce_min(Channel0_y_one_hot, axis=[1, 2, 3])
     MaxPrbNeg = tf.multiply(PatchesNegOneHot, tf.math.reduce_max(p_y_given_x_train[:, 1, :, :, :], axis=[1, 2, 3]))
     resultTN = 1. - tf.divide(tf.math.reduce_sum(MaxPrbNeg), tf.math.reduce_sum(PatchesNegOneHot) + 1)
-
-    cost = 1. - ((0.005* resultTN + 0.995 * resultTP))
+    alpha = 0.995 # 0.995 for high sensitivity, 0.5 for high precision.
+    # For your own data, a different alpha value may apply
+    cost = 1. - ((1 - alpha)* resultTN + alpha * resultTP)
 
     return cost
 
