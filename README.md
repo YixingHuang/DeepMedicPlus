@@ -7,7 +7,7 @@ This is the official code repository for our Medical Physics paper "Deep learnin
  ## Citation
  To use these codes, please cite our paper:
  
- [1] Y. Huang, C. Bert, P. Sommer, B. Frey, U. Gaipl, L. V. Distel, T. Weissmann, M. Uder, M. A. Schmidt, A. D¨orfler, A. Maier, R. Fietkau, and F. Putz, “Deep learning for brain metastasis detection and segmentation in longitudinal mri data,” Medical Physics, vol. 49, no. 9, pp. 5773–5786, 2022.
+ [1] Y. Huang, C. Bert, P. Sommer, B. Frey, U. Gaipl, L. V. Distel, T. Weissmann, M. Uder, M. A. Schmidt, A. Dörfler, A. Maier, R. Fietkau, and F. Putz, “Deep learning for brain metastasis detection and segmentation in longitudinal mri data,” Medical Physics, vol. 49, no. 9, pp. 5773–5786, 2022.
  
  Latex Bibtex:  
  @article{huang2022deep,  
@@ -42,7 +42,19 @@ Pretrained models are located at
 The high sensitivity model is: deepMedicWide1.high_sensitivity.model.ckpt  
 The high precision model is: deepMedicWide1.high_precision.model.ckpt
 
+#### Data structure for inference/test
+Put the main test volume paths in [.\examples\configFiles\deepMedicPlus\test\testChannels_t1c.cfg](./DeepMedicPlus/examples/configFiles/deepMedicPlus/test/testChannels_t1c.cfg)  
+
+put the corresponding prior volume paths in [.\examples\configFiles\deepMedicPlus\test\testPriorChannels_t1c.cfg](./DeepMedicPlus/examples/configFiles/deepMedicPlus/test/testPriorChannels_t1c.cfg)
+
+If no prior volume, simply put the path to a volume with Zero values only. The zero-value volume we used is shared here named "!!AAZero_Volume.nii.gz".
+
 #### Command line for inference/test with pretrained models
 ```python
--model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -test ./examples/configFiles/deepMedicPlus/test/testConfig.cfg -load ./examples/output/saved_models/deepMedicWide1.high_sensitivity.model.ckpt -dev cuda0
+python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -test ./examples/configFiles/deepMedicPlus/test/testConfig.cfg -load ./examples/output/saved_models/deepMedicWide1.high_sensitivity.model.ckpt -dev cuda0
 ```
+```python
+python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -test ./examples/configFiles/deepMedicPlus/test/testConfig.cfg -load ./examples/output/saved_models/deepMedicWide1.high_precision.model.ckpt -dev cuda0
+```
+
+For Windows users, you can also use [runCMDs.py](./DeepMedicPlus/runCMDs.py) to run multiple commands.
