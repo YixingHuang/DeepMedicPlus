@@ -33,5 +33,5 @@ For retraining on your own datasets, our preprocessing pipeline is also shared.
 
 ### Pretrained models
 Pretrained models are located at 
-[DeepMedicDualPath\examples\output\saved_models\pretrainedModels](DeepMedicPlus\examples\output\saved_models\pretrainedModels)
+[DeepMedicDualPath\examples\output\saved_models\pretrainedModels](DeepMedicPlus/DeepMedicPlus/examples/output/saved_models/pretrainedModels/)
 
