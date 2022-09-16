@@ -47,7 +47,7 @@ Put the main test volume paths in [.\examples\configFiles\deepMedicPlus\test\tes
 
 put the corresponding prior volume paths in [.\examples\configFiles\deepMedicPlus\test\testPriorChannels_t1c.cfg](./DeepMedicPlus/examples/configFiles/deepMedicPlus/test/testPriorChannels_t1c.cfg)
 
-If no prior volume, simply put the path to a volume with Zero values only. The zero-value volume we used is shared here named "!!AAZero_Volume.nii.gz".
+If *no prior volume*, simply put the path to a volume with Zero values only. The zero-value volume we used is shared here named "!!AAZero_Volume.nii.gz".
 
 #### Command line for inference/test with pretrained models
 ```python
