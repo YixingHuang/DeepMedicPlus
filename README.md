@@ -51,6 +51,8 @@ If **no prior volume**, simply put the path to a volume with Zero values only. T
 
 #### Data preprocessing pipeline  
 In order to directly apply our pretrained models, your test data should have the same [preprocessing pipeline](./Brain_MRI_Preprocessing_pipeline/) as ours.
+Hopefully your MRI sequence is also T1 MPRAGE or other similar T1 sequences.
+Otherwise, the performance of using our pretrained models will be suboptimal, due to different image styles.
 
 #### Command line for inference/test with pretrained models
 ```python
