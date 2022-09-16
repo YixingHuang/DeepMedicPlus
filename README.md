@@ -18,6 +18,8 @@ eprint = {https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1002/mp.15863},
 year = {2022}  
 }  
 
+## Graphical abstract
+
 ![Graphical abstract](GraphicalAbstract.png)
 
 ## Contents
