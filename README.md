@@ -87,3 +87,6 @@ python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfi
 numpy version:1.19.5    it seems that there is compatibility problems with the latest numpy versions.
 
 We run our codes in a Windows system with Python 3.7, CUDA 11.0; Higher versions should be okay.
+
+## Acknowledgments
+Our implementation is mainly based on [DeepMedic](https://github.com/deepmedic/deepmedic).
