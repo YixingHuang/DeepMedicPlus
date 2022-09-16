@@ -4,6 +4,7 @@ This is the official code repository for our Medical Physics paper "Deep learnin
  
  The backbone of our implementation is from the [original DeepMedic repository](https://github.com/deepmedic/deepmedic). Therefore, almost all the instructions from the original DeepMedic repository still apply to our implementation.
  
+ ## Citation
  To use these codes, please cite our paper:
  
  [1] Y. Huang, C. Bert, P. Sommer, B. Frey, U. Gaipl, L. V. Distel, T. Weissmann, M. Uder, M. A. Schmidt, A. D¨orfler, A. Maier, R. Fietkau, and F. Putz, “Deep learning for brain metastasis detection and segmentation in longitudinal mri data,” Medical Physics, vol. 49, no. 9, pp. 5773–5786, 2022.
@@ -31,7 +32,17 @@ year = {2022}
 This repository contains our DeepMedic+ implementation with prior volumes and proposed volume-level sensitivity-specificity (VSS) loss, as well as the pretrained high-sensitivity and high-precision model weights.
 For retraining on your own datasets, our preprocessing pipeline is also shared.
 
-### Pretrained models
+#### VSS loss
+The VSS loss is located at [here](./DeepMedicPlus/deepmedic/neuralnet/cost_functions.py).
+
+#### Pretrained models
 Pretrained models are located at 
 [DeepMedicDualPath\examples\output\saved_models\pretrainedModels](./DeepMedicPlus/examples/output/saved_models/pretrainedModels/)
 
+The high sensitivity model is: deepMedicWide1.high_sensitivity.model.ckpt  
+The high precision model is: deepMedicWide1.high_precision.model.ckpt
+
+#### Command line for inference/test with pretrained models
+```python
+-model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -test ./examples/configFiles/deepMedicPlus/test/testConfig.cfg -load ./examples/output/saved_models/deepMedicWide1.high_sensitivity.model.ckpt -dev cuda0
+```
