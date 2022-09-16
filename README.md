@@ -4,6 +4,10 @@ This is the official code repository for our Medical Physics paper "Deep learnin
  
  The backbone of our implementation is from the [original DeepMedic repository](https://github.com/deepmedic/deepmedic). Therefore, almost all the instructions from the original DeepMedic repository still apply to our implementation.
  
+ ## Graphical abstract
+
+![Graphical abstract](GraphicalAbstract.png)
+
  ## Citation
  To use these codes, please cite our paper:
  
@@ -24,9 +28,6 @@ eprint = {https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1002/mp.15863},
 year = {2022}  
 }  
 
-## Graphical abstract
-
-![Graphical abstract](GraphicalAbstract.png)
 
 ## Contents
 This repository contains our DeepMedic+ implementation with prior volumes and proposed volume-level sensitivity-specificity (VSS) loss, as well as the pretrained high-sensitivity and high-precision model weights.
