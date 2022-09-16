@@ -31,3 +31,7 @@ year = {2022}
 This repository contains our DeepMedic+ implementation with prior volumes and proposed volume-level sensitivity-specificity (VSS) loss, as well as the pretrained high-sensitivity and high-precision model weights.
 For retraining on your own datasets, our preprocessing pipeline is also shared.
 
+### Pretrained models
+Pretrained models are located at 
+[DeepMedicDualPath\examples\output\saved_models\pretrainedModels](DeepMedicPlus\examples\output\saved_models\pretrainedModels)
+
