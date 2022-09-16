@@ -24,8 +24,8 @@ year = {2022}
 }  
 
 ## Pipeline Steps
-### N4 bias correction
- This is a 3D Slicer Python model.
+### a. N4 bias correction
+ This is a [3D Slicer](https://www.slicer.org/) Python model.
  
 You can create a new Slicer module by the following steps:
 
@@ -35,3 +35,7 @@ Add the folder containing the python script. At the first selection, you only se
 
 Note that we use 3D Slicer version **4.10.2**    Latest versions have compatibility issues.
 
+### b. Skull striping using the [HD-BET](https://github.com/MIC-DKFZ/HD-BET) deep learning model developed by DKFZ
+
+### c. Registration and intensity normalization
+A template volume named "OwnTemplate.nii.gz" is provided for registration.
