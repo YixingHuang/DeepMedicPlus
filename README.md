@@ -39,3 +39,10 @@ The VSS loss is located at [here](./DeepMedicPlus/deepmedic/neuralnet/cost_funct
 Pretrained models are located at 
 [DeepMedicDualPath\examples\output\saved_models\pretrainedModels](./DeepMedicPlus/examples/output/saved_models/pretrainedModels/)
 
+The high sensitivity model is: deepMedicWide1.high_sensitivity.model.ckpt  
+The high precision model is: deepMedicWide1.high_precision.model.ckpt
+
+#### Command line for inference/test with pretrained models
+```python
+-model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -test ./examples/configFiles/deepMedicPlus/test/testConfig.cfg -load ./examples/output/saved_models/deepMedicWide1.high_sensitivity.model.ckpt -dev cuda0
+```
