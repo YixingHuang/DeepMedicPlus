@@ -1,8 +1,7 @@
-# DeepMedic+
+# DeepMedic+ Preprocessing Pipeline
 ## Preprocessing Pipeline for "Deep learning for brain metastasis detection and segmentation in longitudinal MRI data"
-This is the official code repository for our Medical Physics paper "Deep learning for brain metastasis detection and segmentation in longitudinal MRI data": https://doi.org/10.1002/mp.15863
- 
- The backbone of our implementation is from the [original DeepMedic repository](https://github.com/deepmedic/deepmedic). Therefore, almost all the instructions from the original DeepMedic repository still apply to our implementation.
+This is the preprocessing pipeline, which PD Dr. Florian Putz used to preproce our T1 MPRAGE data.
+This is one part of the official code repository for our Medical Physics paper "Deep learning for brain metastasis detection and segmentation in longitudinal MRI data": https://doi.org/10.1002/mp.15863
  
  ## Citation
  To use these codes, please cite our paper:
@@ -24,4 +23,15 @@ eprint = {https://aapm.onlinelibrary.wiley.com/doi/pdf/10.1002/mp.15863},
 year = {2022}  
 }  
 
+## Pipeline Steps
+### N4 bias correction
+ This is a 3D Slicer Python model.
+ 
+You can create a new Slicer module by the following steps:
+
+Edit -> Application Setting -> modules -> Additional module paths: -> Add
+
+Add the folder containing the python script. At the first selection, you only see an empty folder. But it is fine. Select ok and restart Slicer, you will see the new module.
+
+Note that we use 3D Slicer version **4.10.2**    Latest versions have compatibility issues.
 
