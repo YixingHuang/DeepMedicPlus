@@ -6,8 +6,8 @@ This is the official code repository for our Medical Physics paper "Deep learnin
  To use these codes, please cite our paper:
  
  @article{huang2022deep, 
-author = {Huang, Yixing and Bert, Christoph and Sommer, Philipp and Frey, Benjamin and Gaipl, Udo and Distel, Luitpold V. and Weissmann, Thomas and Uder, Michael and Schmidt, Manuel A. and Dörfler, Arnd and Maier, Andreas and Fietkau, Rainer and Putz, Florian}, 
-title = {Deep learning for brain metastasis detection and segmentation in longitudinal MRI data}, 
+ author = {Huang, Yixing and Bert, Christoph and Sommer, Philipp and Frey, Benjamin and Gaipl, Udo and Distel, Luitpold V. and Weissmann, Thomas and Uder, Michael and Schmidt, Manuel A. and Dörfler, Arnd and Maier, Andreas and Fietkau, Rainer and Putz, Florian}, 
+ title = {Deep learning for brain metastasis detection and segmentation in longitudinal MRI data}, 
 journal = {Medical Physics}, 
 volume = {49}, 
 number = {9}, 
