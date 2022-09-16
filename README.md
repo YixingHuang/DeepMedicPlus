@@ -68,7 +68,7 @@ For Windows users, you can also use [runCMDs.py](./DeepMedicPlus/runCMDs.py) to 
 1. Preprocess the data with either your own preprocessing pipeline or [ours](./Brain_MRI_Preprocessing_pipeline/).
 2. Put your training data paths in the config files of [.\examples\configFiles\deepMedicPlus\train](./DeepMedicPlus/examples/configFiles/deepMedicPlus/train/). Put the volumes, labels, brain masks, and prior volumes into trainChannels_t1c.cfg,  trainGtLabels.cfg,  trainRoiMasks.cfg, and trainPriorChannels_t1c.cfg, respectively.
 3. In [trainConfigwide.cfg](./DeepMedicPlus/examples/configFiles/DeepMedicPlus/train/trainConfigwide.cfg), Line 62: please add a new numberOfEpochs value.
-5. Change the $\alpha A$ parameter mannualy in [cost_functions.py](./DeepMedicPlus/deepmedic/neuralnet/cost_functions.py), for example, 0.995 for high sensitivity and 0.5 for high precision. (Sorry that haven't made it available in the args input yet). 
+5. Change the $\alpha$ parameter mannualy in [cost_functions.py](./DeepMedicPlus/deepmedic/neuralnet/cost_functions.py), for example, 0.995 for high sensitivity and 0.5 for high precision. (Sorry that haven't made it available in the args input yet). 
 7. Run the command for training
 ```python
 python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -train ./examples/configFiles/deepMedicPlus/train/trainConfigwide.cfg  -dev cuda0
