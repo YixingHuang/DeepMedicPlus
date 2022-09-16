@@ -33,7 +33,7 @@ Edit -> Application Setting -> modules -> Additional module paths: -> Add
 
 Add the folder containing the python script. At the first selection, you only see an empty folder. But it is fine. Select ok and restart Slicer, you will see the new module.
 
-Note that we use 3D Slicer version **4.10.2**    Latest versions have compatibility issues.
+Note that we use 3D Slicer version [4.10.2](https://slicer-packages.kitware.com/#collection/5f4474d0e1d8c75dfc70547e/folder/60add36eae4540bf6a89be73)    Latest versions have compatibility issues.
 
 ### b. Skull striping using the [HD-BET](https://github.com/MIC-DKFZ/HD-BET) deep learning model developed by DKFZ
 
