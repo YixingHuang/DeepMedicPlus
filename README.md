@@ -9,7 +9,7 @@ This is the official code repository for our Medical Physics paper "Deep learnin
 ![Graphical abstract](GraphicalAbstract.png)
 
  ## Citation
- To use these codes, please cite our paper:
+ To use these codes, please cite [our paper](https://aapm.onlinelibrary.wiley.com/doi/10.1002/mp.15863):
  
  [1] Y. Huang, C. Bert, P. Sommer, B. Frey, U. Gaipl, L. V. Distel, T. Weissmann, M. Uder, M. A. Schmidt, A. Dörfler, A. Maier, R. Fietkau, and F. Putz, “Deep learning for brain metastasis detection and segmentation in longitudinal mri data,” Medical Physics, vol. 49, no. 9, pp. 5773–5786, 2022.
  
