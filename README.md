@@ -85,7 +85,7 @@ python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfi
    In [trainConfigwide.cfg](./DeepMedicPlus/examples/configFiles/DeepMedicPlus/train/trainConfigwide.cfg), Line 62: please add a new numberOfEpochs value,  for example, 80, then additional 30 epochs will be trained.
    
 ## Our System Environment
-numpy version:1.19.5    it seems that there is compatibility problems with the latest numpy versions.
+Tensorflow-GPU version:2.4.1, numpy version:1.19.5    it seems that there is compatibility problems with the latest numpy versions.
 
 We run our codes in a Windows system with Python 3.7, CUDA 11.0; Higher versions should be okay.
 
