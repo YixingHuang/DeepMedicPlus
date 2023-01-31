@@ -58,10 +58,10 @@ Otherwise, the performance of using our pretrained models will be suboptimal, du
 
 #### Command line for inference/test with pretrained models
 ```python
-python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -test ./examples/configFiles/deepMedicPlus/test/testConfig.cfg -load ./examples/output/saved_models/deepMedicWide1.high_sensitivity.model.ckpt -dev cuda0
+python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -test ./examples/configFiles/deepMedicPlus/test/testConfig.cfg -load ./examples/output/saved_models/pretrainedModels/deepMedicWide1.high_sensitivity.model.ckpt -dev cuda0
 ```
 ```python
-python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -test ./examples/configFiles/deepMedicPlus/test/testConfig.cfg -load ./examples/output/saved_models/deepMedicWide1.high_precision.model.ckpt -dev cuda0
+python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -test ./examples/configFiles/deepMedicPlus/test/testConfig.cfg -load ./examples/output/saved_models/pretrainedModels/deepMedicWide1.high_precision.model.ckpt -dev cuda0
 ```
 
 For Windows users, you can also use [runCMDs.py](./DeepMedicPlus/runCMDs.py) to run multiple commands.
@@ -77,10 +77,10 @@ python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfi
 ```
 8. For fast training, you can fine tune our pretrained model with your own training data with the following command:
 ```python
-python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -train ./examples/configFiles/deepMedicPlus/train/trainConfigwide.cfg  -load ./examples/output/saved_models/deepMedicWide1.high_sensitivity.model.ckpt -dev cuda0
+python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -train ./examples/configFiles/deepMedicPlus/train/trainConfigwide.cfg  -load ./examples/output/saved_models/pretrainedModels/deepMedicWide1.high_sensitivity.model.ckpt -dev cuda0
 ```
 ```python
-python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -train ./examples/configFiles/deepMedicPlus/train/trainConfigwide.cfg  -load ./examples/output/saved_models/deepMedicWide1.high_precision.model.ckpt -dev cuda0
+python deepMedicRun -model ./examples/configFiles/deepMedicPlus/model/modelConfig_wide1_deeper.cfg -train ./examples/configFiles/deepMedicPlus/train/trainConfigwide.cfg  -load ./examples/output/saved_models/pretrainedModels/deepMedicWide1.high_precision.model.ckpt -dev cuda0
 ```
    In [trainConfigwide.cfg](./DeepMedicPlus/examples/configFiles/DeepMedicPlus/train/trainConfigwide.cfg), Line 62: please add a new numberOfEpochs value,  for example, 80, then additional 30 epochs will be trained.
    
