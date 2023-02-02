@@ -1,3 +1,0 @@
-model_checkpoint_path: ".\\examples\\output/saved_models//pretrainedModels//deepMedicWide1.high_sensitivity.model.ckpt"
-all_model_checkpoint_paths: ".\\examples\\output/saved_models//pretrainedModels//deepMedicWide1.high_sensitivity.model.ckpt"
-all_model_checkpoint_paths: ".\\examples\\output/saved_models//pretrainedModels//deepMedicWide1.high_precision.model.ckpt"
