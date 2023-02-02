@@ -39,3 +39,6 @@ Note that we use 3D Slicer version [4.10.2](https://slicer-packages.kitware.com/
 
 ### c. Registration and intensity normalization
 A template volume named "OwnTemplate.nii.gz" is provided for registration.
+
+## Pipeline without 3D Slicer
+If you are not familiar with 3D Slicer, you can follow the steps posted [here](https://github.com/YixingHuang/DeepMedicPlus/issues/5)
