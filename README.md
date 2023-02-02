@@ -38,7 +38,8 @@ For retraining on your own datasets, our preprocessing pipeline is also shared.
 The VSS loss is located at [here](./DeepMedicPlus/deepmedic/neuralnet/cost_functions.py).
 
 #### Pretrained models
-Pretrained models are located at 
+Pretrained models are shared upon request.
+Put the pretrained models at the following folder: 
 [DeepMedicDualPath\examples\output\saved_models\pretrainedModels](./DeepMedicPlus/examples/output/saved_models/pretrainedModels/)
 
 The high sensitivity model is: deepMedicWide1.high_sensitivity.model.ckpt  
