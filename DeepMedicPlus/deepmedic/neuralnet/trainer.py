@@ -116,7 +116,7 @@ class Trainer(object):
             cost += self._losses_and_weights["dsc"] * cfs.dsc(p_y_given_x, y_gt)
         if "vss" in self._losses_and_weights and self._losses_and_weights["vss"] is not None:
             log.print3("COST: Using VSS loss with weight: " +str(self._losses_and_weights["vss"]))
-            cost += self._losses_and_weights["vss"] * cfs.dsc(p_y_given_x, y_gt)
+            cost += self._losses_and_weights["vss"] * cfs.vss(p_y_given_x, y_gt)
             
         cost_L1_reg = self._L1_reg_weight * cfs.cost_L1(self._net.params_for_L1_L2_reg())
         cost_L2_reg = self._L2_reg_weight * cfs.cost_L2(self._net.params_for_L1_L2_reg())
